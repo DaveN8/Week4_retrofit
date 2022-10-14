@@ -20,17 +20,54 @@
 
     <TextView
         android:id="@+id/tv_title_movie_detail"
-        android:layout_width="0dp"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
         android:text="TextView"
         android:textColor="#F57F17"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/img_poster_movie_detail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/img_poster_movie_detail"
+        tools:text="@string/nulldata" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_genre_movie_poster"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/img_poster_movie_detail"
-        tools:text="@string/nulldata" />
+        app:layout_constraintTop_toBottomOf="@+id/img_poster_movie_detail" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_production_company_movie_poster"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/rv_genre_movie_poster"
+        app:layout_constraintStart_toStartOf="@+id/rv_genre_movie_poster"
+        app:layout_constraintTop_toBottomOf="@+id/rv_genre_movie_poster" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_spoken_language_movie_poster"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/rv_production_company_movie_poster"
+        app:layout_constraintStart_toStartOf="@+id/rv_production_company_movie_poster"
+        app:layout_constraintTop_toBottomOf="@+id/rv_production_company_movie_poster" />
+
+    <TextView
+        android:id="@+id/overview_movie_poster"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/rv_spoken_language_movie_poster"
+        app:layout_constraintStart_toStartOf="@+id/rv_spoken_language_movie_poster"
+        app:layout_constraintTop_toBottomOf="@+id/rv_spoken_language_movie_poster" />
 </androidx.constraintlayout.widget.ConstraintLayout>
