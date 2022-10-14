@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
+import com.bumptech.glide.Glide
 import com.uc.week4_retrofit.databinding.ActivityMovieDetailBinding
 import com.uc.week4_retrofit.helper.Const
 import com.uc.week4_retrofit.viewmodel.MoviesViewModel
@@ -29,6 +30,9 @@ class MovieDetailActivity : AppCompatActivity() {
             bain.tvTitleMovieDetail.apply {
                 text = response.title
             }
+            Glide.with(applicationContext)
+                .load(Const.IMG_URL + response.backdrop_path)
+                .into(bain.imgPosterMovieDetail)
         })
     }
 }

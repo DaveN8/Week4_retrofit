@@ -4,4 +4,5 @@ object Const {
 
     const val BASE_URL = "https://api.themoviedb.org/3/"
     const val API_KEY = "fae6556192a086a5254900585a669a43"
+    const val IMG_URL = "https://image.tmdb.org/t/p/w500/"
 }
