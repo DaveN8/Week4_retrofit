@@ -5,6 +5,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.uc.week4_retrofit.model.Genre
 import com.uc.week4_retrofit.model.MovieDetails
 import com.uc.week4_retrofit.repository.MoviesRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -50,4 +51,6 @@ class MoviesViewModel @Inject constructor(private val repository: MoviesReposito
                 Log.e("Get Movie Details Data", "Failed!")         }
         }
     }
+
+
 }

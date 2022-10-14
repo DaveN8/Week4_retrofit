@@ -1,5 +1,6 @@
 package com.uc.week4_retrofit.retrofit
 
+import com.uc.week4_retrofit.model.Genre
 import com.uc.week4_retrofit.model.MovieDetails
 import com.uc.week4_retrofit.model.NowPlaying
 import retrofit2.Response
@@ -22,4 +23,11 @@ interface EndPointApi {
         @Path("id") id: Int,
         @Query("api_key") apiKey: String
     ):Response<MovieDetails>
+
+//    @GET("movie/{id}")
+//    suspend fun getMovieGenre(
+//        @Path("id") id: Int,
+//        @Query("api_key") apiKey: String
+//    ):Response<Genre>
+
 }

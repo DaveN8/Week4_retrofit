@@ -10,4 +10,7 @@ class MoviesRepository @Inject constructor(private val api: EndPointApi) {
 
     suspend fun getMovieDetailsData(apiKey: String, id: Int) =
         api.getMovieDetails(id, apiKey)
+
+//    suspend fun getMovieGenreData(apiKey: String, id: Int) =
+//        api.getMovieGenre(id, apiKey)
 }
