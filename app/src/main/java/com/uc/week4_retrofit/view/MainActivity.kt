@@ -25,7 +25,6 @@ class MainActivity : AppCompatActivity() {
 
         viewModel = ViewModelProvider(this).get(MoviesViewModel::class.java)
         viewModel.getNowPlaying(Const.API_KEY, "en-US", 1)
-
         viewModel.nowplaying.observe(this, Observer{ response ->
             bain.rvMain.layoutManager = LinearLayoutManager(this)
             adapter = NowPlayingAdapter(response)
