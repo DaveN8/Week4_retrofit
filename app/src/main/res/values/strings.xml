@@ -2,4 +2,5 @@
     <string name="app_name">Week4_retrofit</string>
     <string name="nulldata">-</string>
     <string name="img">img</string>
+    <string name="title_activity_compose_now_playing">ComposeNowPlaying</string>
 </resources>
