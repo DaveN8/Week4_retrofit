@@ -64,6 +64,5 @@ fun MovieList(movieList: ArrayList<Result>) {
 @Composable
 fun DefaultPreview() {
     Week4_retrofitTheme {
-
     }
 }
