@@ -17,6 +17,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.uc.week4_retrofit.model.MovieDetails
 import com.uc.week4_retrofit.model.Result
+import com.uc.week4_retrofit.view.MovieDetailActivity
 
 @Composable
 fun MovieCard(movie: Result) {
@@ -30,8 +31,8 @@ fun MovieCard(movie: Result) {
         shape = RoundedCornerShape(12.dp),
         shadowElevation = 8.dp,
         onClick = {
-            val intent = Intent(mContext, MovieDetails::class.java)
-            intent.putExtra("movie_id",movie.id)
+            val intent = Intent(mContext, MovieDetailActivity::class.java)
+            intent.putExtra("movie.id", movie.id)
             mContext.startActivity(intent)
         }
     ){

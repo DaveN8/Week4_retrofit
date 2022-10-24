@@ -19,8 +19,9 @@ import com.uc.week4_retrofit.view.ui.theme.Week4_retrofitTheme
 import com.uc.week4_retrofit.viewmodel.MoviesViewModel
 import com.uc.week4_retrofit.model.Result
 import com.uc.week4_retrofit.view.widgets.MovieCard
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class ComposeNowPlaying : ComponentActivity() {
 
     private lateinit var viewModel: MoviesViewModel
